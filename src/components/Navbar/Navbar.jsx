@@ -7,7 +7,7 @@ const Navbar =()=>{
                     <span className="text-[25px]">bee</span></p>
             </div>
             <div>
-                <ul className="flex gap-4 cursor-pointer">
+                <ul className=" flex gap-4 cursor-pointer">
                     <li className="hover:text-yellow-500">Signin</li>
                     <li className="hover:text-yellow-500">Signup</li>
                     <li className="hover:text-yellow-500">Profile</li>
