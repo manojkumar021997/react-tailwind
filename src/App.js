@@ -5,7 +5,7 @@ const App = () =>{
   return(
     <div>
       <Navbar/>
-      <h1 className="text-blue-500 font-bold text-3xl">hello</h1>
+      <h1 className="text-black-500 font-bold text-3xl">home</h1>
       </div>
   )
 
