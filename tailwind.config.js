@@ -9,7 +9,7 @@ module.exports = {
         "whiteColor":"#f9f7f3",
         "yellowColor":"#ffcf00",
         "blackColor":"#252422",
-        "shdowColor":"#cfd7c7",
+        "shdowColor":"#cfd7c7"
       }
     },
   },
