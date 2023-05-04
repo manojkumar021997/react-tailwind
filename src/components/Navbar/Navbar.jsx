@@ -12,7 +12,7 @@ const Navbar =()=>{
                 </p>
                 <div>
             <ul className="flex gap-8 mx-16 cursor-pointer font-semibold">
-                    <Link to={"/Home"}><li className="hover:text-yellowColor">Home</li></Link>
+                    <Link to={"/Home"}><li className="hover:text-yellowColor">Hom</li></Link>
                     <Link to={"/About"}><li className="hover:text-yellowColor">About</li></Link>
                     <Link to={"/Contact"}><li className="hover:text-yellowColor">Contact</li></Link>
                 </ul>
