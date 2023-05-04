@@ -6,7 +6,7 @@ import Home from "./route/Home";
 import About from "./route/About";
 import Contact from "./route/Contact";
 import Singnin from "./route/Singin";
-import Singnup from "./route/Singnup";
+import Singnup from "./route/Signup";
 import Profile from "./route/Profile";
 
 
