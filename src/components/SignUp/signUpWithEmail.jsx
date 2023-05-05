@@ -1,4 +1,4 @@
-const SigninWithEmail =()=>{
+const SignUpWithEmail =()=>{
     return(
         <div className="bg-transparent">
             <form className="bg-transparent opacity-70">
@@ -8,4 +8,4 @@ const SigninWithEmail =()=>{
         </div>
     )
 }
-export default SigninWithEmail;
+export default SignUpWithEmail;
