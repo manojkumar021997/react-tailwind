@@ -14,7 +14,7 @@ const Singnup = () => {
                     </div>
                 </div>
             </div>
-            <div style={{backgroundImage: `url(${bgimage})`}} className='flex flex-col bg-cover opacity-50 bg-center bg-no-repeat justify-center items-center'>
+            <div style={{backgroundImage: `url(${bgimage})`}} className='flex flex-col bg-cover opacity-50 bg-center bg-no-repeat justify-evenly items-center '>
                 <SignUpWithGoogle/>
                 <SignUpWithEmail/>
             </div>
