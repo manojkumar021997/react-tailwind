@@ -1,4 +1,6 @@
 import bgimage from '../assets/images/bumblebee.png'
+import SigninWithEmail from '../components/signinWithGoogle/signinWithEmail';
+import SigninWithGoogle from '../components/signinWithGoogle/signinWithGoogle';
 const Singnup = () => {
     return(
         <div className="grid grid-cols-2 w-[96vw] h-[90vh] text-shdowColor">
@@ -13,10 +15,8 @@ const Singnup = () => {
                 </div>
             </div>
             <div style={{backgroundImage: `url(${bgimage})`}} className='flex flex-col bg-cover opacity-50 bg-center bg-no-repeat justify-center items-center'>
-                <div className='bg-transparent text-whiteColor'>
-                    <button className='opacity-100'>Signin With Google</button>
-                </div>
-                <div>details</div>
+                <SigninWithGoogle/>
+                <SigninWithEmail/>
             </div>
         </div>
     )
