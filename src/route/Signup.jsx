@@ -14,8 +14,13 @@ const Singnup = () => {
                     </div>
                 </div>
             </div>
-            <div style={{backgroundImage: `url(${bgimage})`}} className='flex flex-col bg-cover opacity-50 bg-center bg-no-repeat justify-evenly items-center '>
+            <div style={{backgroundImage: `url(${bgimage})`}} className='flex flex-col bg-cover opacity-70 bg-center bg-no-repeat justify-evenly items-center '>
                 <SignUpWithGoogle/>
+                {/* <div className='flex flex-row items-center bg-transparent w-full p-[2rem]'>
+                    <hr className='border-3 border-shdowColor w-3/6'/>
+                    <p className='bg-transparent p-4 font-bold text-[25px]'>or</p>
+                    <hr className='border-3 border-shdowColor w-3/6'/>
+                </div> */}
                 <SignUpWithEmail/>
             </div>
         </div>
