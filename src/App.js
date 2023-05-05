@@ -8,7 +8,7 @@ import Contact from "./route/Contact";
 import Singnin from "./route/Singin";
 import Singnup from "./route/Signup";
 import Profile from "./route/Profile";
-import { users } from "./components/Navbar/data/data";
+import { users } from "./components/data/data";
 import './App.css'
 
 
