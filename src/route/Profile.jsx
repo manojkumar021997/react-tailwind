@@ -22,10 +22,10 @@ const Profile = () =>{
                     <div className="hover:rounded-lg w-[70%] flex flex-col text-shdowColor hover:shadow-2xl hover:shadow-yellowColor
                      gap-6 content-between text-center p-[2rem] opacity-60 hover:opacity-100 ">
                         <h3 className="text-[25px] text-center font-semibold opacity-1">{user.firstName}</h3>
-                        <p className='flex justify-center items-center'><AiOutlineMail className='text-[25px]'/> Email : {user.email}</p>
-                        <p className='flex items-center justify-center'><CgWorkAlt className='text-[25px]'/> job : {user.job}</p>
+                        <p className='flex justify-center items-center'><AiOutlineMail className='text-[15px]'/> Email : {user.email}</p>
+                        <p className='flex items-center justify-center'><CgWorkAlt className='text-[15px]'/> job : {user.job}</p>
                         <p className='flex items-center justify-center'>
-                            <BsTelephoneFill className='text-[25px]'/>
+                            <BsTelephoneFill className='text-[15px]'/>
                             Phone:{user.phoneno}
                         </p>
                         <p>{user.description}</p>
