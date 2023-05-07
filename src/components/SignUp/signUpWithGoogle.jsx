@@ -1,5 +1,8 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { useContext } from "react";
+import { userContext } from "../../Context/userContext";
 const SignUpWithGoogle = ()=>{
+    const {users, setUsers} = useContext(userContext)
     const auth = getAuth();
     const provider = new GoogleAuthProvider();
     const handleGoogleSignin = ()=>{
@@ -10,6 +13,8 @@ const SignUpWithGoogle = ()=>{
                 // The signed-in user info.
                 const user = result.user;
                 console.log(user,credential);
+                setUsers({users,user})
+                console.log(setUsers);
                 // IdP data available using getAdditionalUserInfo(result)
                 // ...
             }).catch((error) => {
