@@ -1,9 +1,9 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { useContext } from "react";
-import { userContext } from "../../Context/userContext";
+// import { useContext } from "react";
+// import { UsersContext } from "../../Context/UserContext";
 const SignUpWithGoogle = ()=>{
-    const {users, setUsers} = useContext(userContext)
-    const auth = getAuth();
+    // const {users, setUsers} = useContext(UsersContext)
+    const auth = getAuth()
     const provider = new GoogleAuthProvider();
     const handleGoogleSignin = ()=>{
         signInWithPopup(auth, provider)
