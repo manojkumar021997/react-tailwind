@@ -41,9 +41,9 @@ const Card = () => {
         transition={{
           duration: 1
         }}
-        className='flex items-center justify-center gap-[1.5rem]'>
+        className='flex items-center justify-center gap-[1.5rem] p-[1rem]'>
             <img className='w-[30%] shadow-md shadow-yellowColor' src={person_1} alt='per1'/>
-            <hr className='text-yellowColor border-2 border-yellowColor h-[70%]'/>
+            <hr className='text-yellowColor border-2 border-yellowColor h-[80%]'/>
             <img className='w-[30%] mt-[5rem] shadow-md shadow-yellowColor' src={person_2} alt='per2'/>
 
         </motion.div>
