@@ -2,13 +2,16 @@
 
 *{
     font-family: 'Montserrat', sans-serif;
-    background-color: black;
-
+    background-color: black;  
 }
+
 body{
     /* width: 28rem; */
 }
 
 ::-webkit-scrollbar{
     display: none;
+}
+.cards{
+    font-family:'Oswald', sans-serif;
 }
