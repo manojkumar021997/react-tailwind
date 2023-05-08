@@ -13,8 +13,8 @@ const SignUpWithGoogle = ()=>{
                 // The signed-in user info.
                 const user = result.user;
                 console.log(user,credential);
-                setUsers({users,user})
-                console.log(setUsers);
+                // setUsers({users,user})
+                // console.log(setUsers);
                 // IdP data available using getAdditionalUserInfo(result)
                 // ...
             }).catch((error) => {

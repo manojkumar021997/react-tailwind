@@ -1,20 +1,21 @@
 // import bgimage from '../assets/images/bumblebee.png'
-
+// import SignUpWithGoogle from "../components/SignUp/signUpWithGoogle";
 const Singnin = () => {
     return(
         <div>
             <div className="grid grid-cols-2 max-w-[100vw] h-[90vh] text-shdowColor">
                 
                 {/* <div style={{ backgroundImage: `url(${bgimage})` }} className='flex flex-col bg-cover opacity-50 bg-center bg-no-repeat justify-center items-center'> */}
-                <div className="flex flex-col  gap-2">
-                    <div className='bg-transparent text-whiteColor flex items-center justify-center'>
-                        <button className='opacity-100  '>Signin With Google</button>
+                <div className="flex flex-col items-center justify-center">
+                    <div className='bg-transparent text-whiteColor  mb-[2rem]'>
+                        <button className='opacity-100 flex gap-2'> <img className="h-[25px] w-[25px] bg-transparent" src={'https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png'} alt="Googleimg" />Signin With Google</button>
                     {/* </div> */}
                   </div>
-                  <div className="flex flex-col mt-2 items-center justify-center">
-                    <input className="w-72 h-8" type="text" placeholder="Enter Your Email"/><br/>
+                  <div className="flex flex-col mt-2 items-center justify-center border-lg ">
+                    <input className="w-72 h-8 " type="text" placeholder="Enter Your Email"/><br/>
                     <input className="w-72  h-8" type="password" placeholder="Enter Your Password"/><br/>
                     <input className="w-72  h-8" type="password" placeholder="Enter Your Confirmpassword"/>
+                    <button className="mt-6">Submit</button>
                   </div>
                   </div>
                 <div className="bg-yellowColor opacity-70  flex items-center justify-center ">
