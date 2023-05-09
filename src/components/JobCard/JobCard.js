@@ -63,7 +63,11 @@ const JobCard = () => {
                 <span className='text-[25px] bg-transparent  rounded-full'>{val.Employees}</span>
               </p>
             </div>
-            <button className='border-2 border-blackColor hover:text-shdowColor hover:border-shdowColor p-2'>View Details</button>
+            <motion.button 
+            whileHover={{
+              scale:1.1
+            }}
+            className='border-2 border-blackColor hover:text-shdowColor hover:border-shdowColor p-2'>View Details</motion.button>
           </motion.div>
         )
       })}
