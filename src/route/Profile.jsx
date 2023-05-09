@@ -14,8 +14,8 @@ const Profile = () =>{
     return(
         <div>
             <div className=" grid grid-cols-2">
-                <div className="w-[30vw]] h-[100vh] border-yellowColor">
-                    <img className="rounded-e-full h-[100vh] border-yellowColor  border-4 border-l-0" src={user.image} alt={user.firstName} />
+                <div className="w-[30vw]] h-[80vh] border-yellowColor ">
+                    <img className="rounded-e-full h-[100vh] overflow-hidden border-yellowColor  border-4 border-l-0" src={user.image} alt={user.firstName} />
                 </div>
                 <div className=" flex flex-col gap-[3rem] w-[100%] border-red-800 ">
                     <h1 className="mx-[4rem] p-[1rem] text-yellowColor font-bold-700 text-[28px]">{user.job}</h1>
