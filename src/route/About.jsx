@@ -21,7 +21,7 @@ const About = () =>{
                 </div>
             </div>
             <div className='flex items-center justify-center text-[20px] font-semibold text-shdowColor w-[100%]'>
-                <p className='w-[30%] text-center opacity-[70%] hover:opacity-[100]'>
+                <p className='w-[50%] text-center opacity-[70%] hover:opacity-[100]'>
                     Our Talented teams craft the best code and design amazing user experiences
                     for our Clients 
                 </p>

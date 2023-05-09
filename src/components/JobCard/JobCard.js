@@ -1,5 +1,6 @@
 import React from 'react'
 // import {MdOutlineWorkHistory} from 'react-icons/md'
+import { motion } from 'framer-motion';
 
 const JobCard = () => {
     const UserDetails = [
@@ -37,7 +38,7 @@ const JobCard = () => {
       {
         id: 6,
         Work: "Tester",
-        Employees: "1",
+        Employees: "4",
         description: "Tester For web App",
       },
     ];
@@ -45,7 +46,11 @@ const JobCard = () => {
     <div className='flex flex-wrap gap-[1rem] p-[2rem]'>
       {UserDetails.map((val)=>{
         return(
-          <div className=' flex flex-col items-center bg-whiteColor rounded-lg text-blackColor font-medium justify-between h-[240px] w-[30%] p-[1rem] hover:bg-blackColor hover:text-yellowColor'>
+          <motion.div
+          whileHover={{
+            scale:1.04
+          }}
+           className=' flex flex-col items-center bg-shdowColor rounded-lg hover:bg-blackColor  hover:text-yellowColor text-blackColor font-medium justify-between h-[240px] w-[30%] p-[1rem]'>
             <div className='bg-transparent w-[100%] flex items-center justify-center'>
               <p className='bg-transparent font-semibold flex items-center text-[1.1rem]'>{val.Work}</p>
             </div>
@@ -59,7 +64,7 @@ const JobCard = () => {
               </p>
             </div>
             <button className='border-2 border-blackColor hover:text-shdowColor hover:border-shdowColor p-2'>View Details</button>
-          </div>
+          </motion.div>
         )
       })}
     </div>
