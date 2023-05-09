@@ -32,7 +32,7 @@ const Contact = () =>{
                     <div className='text-yellowColor'><MdLocationPin/></div>
                     <span>11,Street 342, Abcd fgh</span>
                     </div>
-                <div className=' flex text-yellowColor space-x-4 text-lg  '>
+                <div className=' flex text-yellowColor space-x-4 text-xl '>
                 <a href="#" className='hover:text-shdowColor'><BsFacebook/></a>
                 <a href="#" className='hover:text-shdowColor'><AiFillInstagram/></a>
                 <a href="#" className='hover:text-shdowColor'><AiFillGithub/></a>
@@ -58,7 +58,7 @@ const Contact = () =>{
                         </div>
                     </from>
                     <button
-                         className='inline-block self-end bg-yellowColor text-black font-bold rounded-lg px-6 py-2 mt-4 space-y-8 uppercase text-sm'> Send message
+                         className='inline-block self-end bg-yellowColor hover:bg-shdowColor text-black font-bold rounded-lg px-6 py-2 mt-4 space-y-8 uppercase text-sm'> Send message
                          </button>
                 </div>
             </div> 

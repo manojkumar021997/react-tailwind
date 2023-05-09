@@ -28,7 +28,7 @@ const Card = () => {
              <form className='w-[60%] flex items-center justify-between bg-white rounded-sm'>
                 <MdLocationOn className='bg-transparent text-blackColor m-1  text-xl'/>
                 <input type='text' className='bg-white text-black p-2'/>
-                <button className='bg-yellowColor text-blackColor font-medium text-[15px] m-1 p-1 rounded-sm '>Search Jobs</button>
+                <button className='bg-yellowColor hover:bg-shdowColor text-blackColor font-medium text-[15px] m-1 p-1 rounded-sm '>Search Jobs</button>
              </form>
         </motion.div>
         <motion.div 
