@@ -1,6 +1,31 @@
 // import bgimage from '../assets/images/bumblebee.png'
 // import SignUpWithGoogle from "../components/SignUp/signUpWithGoogle";
-const Singnin = () => {
+import { useState } from 'react';
+import { useAuth } from '../Context/AuthContext';
+
+const SignIn = () => {
+  const { login } = useAuth();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      await login(email, password);
+      alert("login correct")
+    } catch (error) {
+      console.log('Failed to sign in', error);
+    }
+  };
     return(
         <div>
             <div className="grid grid-cols-2 max-w-[100vw] h-[90vh] text-shdowColor">
@@ -11,12 +36,12 @@ const Singnin = () => {
                         <button className='opacity-100 flex gap-2'> <img className="h-[25px] w-[25px] bg-transparent" src={'https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png'} alt="Googleimg" />Signin With Google</button>
                     {/* </div> */}
                   </div>
-                  <div className="flex flex-col mt-2 items-center justify-center border-lg ">
-                    <input className="w-72 h-8 " type="text" placeholder="Enter Your Email"/><br/>
-                    <input className="w-72  h-8" type="password" placeholder="Enter Your Password"/><br/>
+                  <form onClick={handleSubmit} className="flex flex-col mt-2 items-center justify-center border-lg ">
+                    <input className="w-72 h-8 " type="text" value={email} placeholder="Enter Your Email " onChange={handleEmailChange}/><br/>
+                    <input className="w-72  h-8" type="password" placeholder="Enter Your Password" onChange={handlePasswordChange}/><br/>
                     <input className="w-72  h-8" type="password" placeholder="Enter Your Confirmpassword"/>
                     <button className="mt-6">Submit</button>
-                  </div>
+                  </form>
                   </div>
                 <div className="bg-yellowColor opacity-70  flex items-center justify-center ">
                     <div className='bg-yellowColor w-[60%]'>
@@ -33,4 +58,4 @@ const Singnin = () => {
     )
 }
 
-export default Singnin;
+export default SignIn;
