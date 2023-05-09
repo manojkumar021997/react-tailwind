@@ -13,22 +13,22 @@ const Contact = () =>{
                 <div className=" flex flex-col md:flex-row md:space-x-6 space-y-8 md:space-y-0  text-shdowColor w-full max-w-4xl p-8 rounded-xl shadow-lg">
 
                 <div className="flex flex-col space-y-6">
-                    <div>
+                    <div >
                         <h1 className="font-bold text-2xl tracking-wide text-yellowColor">Contact Us</h1>
                         <p className="pt-2 text-shdowColor text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia assumenda pariatur natus expedita vitae minima</p>
                     </div>
                     <div></div>
-                    <div className=" flex">
+                    <div className=" flex items-center">
                     <div className='text-yellowColor'><IoCall/></div>
                     <span>+(123) 9876 5432</span>
                     </div>
 
-                    <div className=" flex">
+                    <div className=" flex items-center">
                     <div className='text-yellowColor'><IoMail/></div>
                     <span>manojkumar0209@gmail.com</span>
                     </div>
 
-                    <div className=" flex">
+                    <div className=" flex items-center">
                     <div className='text-yellowColor'><MdLocationPin/></div>
                     <span>11,Street 342, Abcd fgh</span>
                     </div>
