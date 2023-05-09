@@ -10,21 +10,23 @@ import Singnup from "./route/Signup";
 import Profile from "./route/Profile";
 import { users } from "./components/data/data";
 import './App.css'
-
+import {AuthProvider} from './Context/AuthContext'
 
 
 const App = () =>{
   return(
-    <Routes>
-      <Route path="/" element={<><Navbar/><Outlet/></>}>
-      <Route index  element={<Home  />}/>
-      <Route path="/About"   element={<About />}/>
-      <Route path="/Contact" element={<Contact />}/>
-      <Route path="/Signin" element={<Singnin />}/>
-      <Route path="/Signup" element={<Singnup />}/>
-      <Route path="/Profile" element={<Profile users={users} />}/>
-      </Route>
-    </Routes>
+    <AuthProvider>
+      <Routes>
+        <Route path="/" element={<><Navbar /><Outlet /></>}>
+          <Route index element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Signin" element={<Singnin />} />
+          <Route path="/Signup" element={<Singnup />} />
+          <Route path="/Profile" element={<Profile users={users} />} />
+        </Route>
+      </Routes>
+    </AuthProvider>
   )
 }
 
