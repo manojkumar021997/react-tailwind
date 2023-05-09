@@ -33,10 +33,10 @@ const Contact = () =>{
                     <span>11,Street 342, Abcd fgh</span>
                     </div>
                 <div className=' flex text-yellowColor space-x-4 text-xl '>
-                <a href="#" className='hover:text-shdowColor'><BsFacebook/></a>
-                <a href="#" className='hover:text-shdowColor'><AiFillInstagram/></a>
-                <a href="#" className='hover:text-shdowColor'><AiFillGithub/></a>
-                <a href="#" className='hover:text-shdowColor'><AiFillTwitterCircle/></a>
+                <a href="a" className='hover:text-shdowColor'><BsFacebook/></a>
+                <a href="a" className='hover:text-shdowColor'><AiFillInstagram/></a>
+                <a href="a" className='hover:text-shdowColor'><AiFillGithub/></a>
+                <a href="a" className='hover:text-shdowColor'><AiFillTwitterCircle/></a>
                 </div>
                 </div>
                 
