@@ -1,10 +1,10 @@
 // import bgimage from '../assets/images/bumblebee.png'
 // import SignUpWithGoogle from "../components/SignUp/signUpWithGoogle";
 import { useState } from 'react';
-import { useAuth } from '../Context/AuthContext';
+import { UserAuth } from '../Context/AuthContext';
 
 const SignIn = () => {
-  const { login } = useAuth();
+  const { login } = UserAuth();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -21,7 +21,8 @@ const SignIn = () => {
 
     try {
       await login(email, password);
-      alert("login correct")
+      // alert("login correct")
+      console.log('login success');
     } catch (error) {
       console.log('Failed to sign in', error);
     }
@@ -36,7 +37,7 @@ const SignIn = () => {
                         <button className='opacity-100 flex gap-2'> <img className="h-[25px] w-[25px] bg-transparent" src={'https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png'} alt="Googleimg" />Signin With Google</button>
                     {/* </div> */}
                   </div>
-                  <form onClick={handleSubmit} className="flex flex-col mt-2 items-center justify-center border-lg ">
+                  <form onSubmit={handleSubmit} className="flex flex-col mt-2 items-center justify-center border-lg ">
                     <input className="w-72 h-8 " type="text" value={email} placeholder="Enter Your Email " onChange={handleEmailChange}/><br/>
                     <input className="w-72  h-8" type="password" placeholder="Enter Your Password" onChange={handlePasswordChange}/><br/>
                     <input className="w-72  h-8" type="password" placeholder="Enter Your Confirmpassword"/>

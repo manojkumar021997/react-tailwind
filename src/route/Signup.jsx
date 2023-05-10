@@ -1,6 +1,6 @@
 import bgimage from '../assets/images/bumblebee.png'
 import SignUpWithEmail from '../components/SignUp/signUpWithEmail';
-import SignUpWithGoogle from '../components/SignUp/signUpWithGoogle';
+// import SignUpWithGoogle from '../components/SignUp/signUpWithGoogle';
 const Singnup = () => {
     return(
         <div className="grid grid-cols-2 w-[96vw] h-[90vh] text-shdowColor">
@@ -15,7 +15,7 @@ const Singnup = () => {
                 </div>
             </div>
             <div style={{backgroundImage: `url(${bgimage})`}} className='flex flex-col bg-cover opacity-70 bg-center bg-no-repeat justify-evenly items-center '>
-                <SignUpWithGoogle/>
+                {/* <SignUpWithGoogle/> */}
                 {/* <div className='flex flex-row items-center bg-transparent w-full p-[2rem]'>
                     <hr className='border-3 border-shdowColor w-3/6'/>
                     <p className='bg-transparent p-4 font-bold text-[25px]'>or</p>

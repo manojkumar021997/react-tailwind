@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-import { app } from './utilities/firebase';
+// import { app } from './utilities/firebase';
 // import { AuthProvider } from './Context/AuthContext';
 // import { Context } from './Context/UserContext';
 
@@ -14,7 +14,7 @@ root.render(
 
     {/* <Context> */}
     
-    <BrowserRouter app={app}>
+    <BrowserRouter>
     <App/>
     </BrowserRouter>
     {/* </Context> */}
