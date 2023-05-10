@@ -54,8 +54,8 @@ const SignIn = () => {
                         <h2 className='bg-transparent text-blackColor text-start font-semibold text-[30px]'>We are  </h2>
                         <h2 className='text-[30px] font-semibold text-center bg-transparent text-blackColor'>Work Like</h2>
                         <div className='text-end bg-yellowColor'>
-                            <strong className=" text-[25px] text font-semibold text-yellowColor">Bumble</strong>
-                            <span className="text-[25px] text-shdowColor opacity-100 font-semibold">bee</span>
+                            <strong className=" text-[25px] text font-semibold bg-black  text-yellowColor">Bumble</strong>
+                            <span className="text-[25px] bg-black text-shdowColor opacity-100 font-semibold">bee</span>
                         </div>
                     </div>
                 </div>

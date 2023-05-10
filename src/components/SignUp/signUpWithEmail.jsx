@@ -17,18 +17,20 @@ const SignUpWithEmail = () => {
     setError('')
     try {
       await createUser(email, password)
-      Swal.fire({
-        position:'top',
-        backgroundColor:'transparent',
-        color:'green',
-        icon:'success',
-      }
+      Swal.fire(
+        'Good job!',
+        'You have an Account!',
+        'success'
       )
       // navigate('/')
     } catch (e) {
       setError(e.message)
       console.log(e.message);
-      Swal.fire(e.message);
+      Swal.fire(
+        'Already Have an Account!',
+        e.message,
+        'warning'
+      )
     }
     
   };
