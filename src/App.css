@@ -2,11 +2,12 @@
 
 *{
     font-family: 'Montserrat', sans-serif;
-    background-color: black;  
 }
 
 body{
     /* width: 28rem; */
+    background-color: black;  
+
 }
 
 ::-webkit-scrollbar{

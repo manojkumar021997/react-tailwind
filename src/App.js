@@ -10,12 +10,12 @@ import Singnup from "./route/Signup";
 import Profile from "./route/Profile";
 import { users } from "./components/data/data";
 import './App.css'
-import {AuthProvider} from './Context/AuthContext'
+import {AuthContextProvider} from './Context/AuthContext'
 
 
 const App = () =>{
   return(
-    <AuthProvider>
+    <AuthContextProvider>
       <Routes>
         <Route path="/" element={<><Navbar /><Outlet /></>}>
           <Route index element={<Home />} />
@@ -26,7 +26,7 @@ const App = () =>{
           <Route path="/Profile" element={<Profile users={users} />} />
         </Route>
       </Routes>
-    </AuthProvider>
+    // </AuthContextProvider>
   )
 }
 
