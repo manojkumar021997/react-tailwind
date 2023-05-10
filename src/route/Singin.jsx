@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { UserAuth } from '../Context/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const SignIn = () => {
   const Navigate = useNavigate();
@@ -24,10 +25,20 @@ const SignIn = () => {
     try {
       await login(email, password);
       Navigate("/")
+      Swal.fire(
+        'Good job!',
+        'Logged in Success!',
+        'success'
+      )
       // alert("login correct")
       console.log('login success');
     } catch (error) {
       console.log('Failed to sign in', error);
+      Swal.fire(
+        'Check!',
+        error.message,
+        'warning'
+      )
     }
   };
     return(
