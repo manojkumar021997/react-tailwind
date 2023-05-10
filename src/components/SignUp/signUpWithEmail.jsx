@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import {UserAuth} from '../../Context/AuthContext'
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2'
 // import { useAuth } from '../../Context/AuthContext';
 
 const SignUpWithEmail = () => {
   const navigate = useNavigate()
   const [email, setEmail] = useState('')
+  const [userName, setUserName] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError]= useState('')
   const { createUser } = UserAuth();
@@ -15,10 +17,18 @@ const SignUpWithEmail = () => {
     setError('')
     try {
       await createUser(email, password)
-      navigate('/')
+      Swal.fire({
+        position:'top',
+        backgroundColor:'transparent',
+        color:'green',
+        icon:'success',
+      }
+      )
+      // navigate('/')
     } catch (e) {
       setError(e.message)
       console.log(e.message);
+      Swal.fire(e.message);
     }
     
   };
@@ -28,7 +38,9 @@ const SignUpWithEmail = () => {
       <form className="bg-transparent  flex flex-col gap-[1.5rem] p-[2rem] cursor-pointer font-bold" 
       onSubmit={handleSubmit}>
         <h2 className="bg-transparent text-center">Register Here</h2>
-        <input className='bg-transparent shadow-shdowColor shadow-md text-whiteColor border-white ' type="text" placeholder="Enter Name"/>
+        <input className='bg-transparent shadow-shdowColor shadow-md text-whiteColor border-white ' 
+        onChange={(e)=>setUserName(e.target.value)}
+        type="text" placeholder="Enter Name"/>
         <input className='bg-transparent shadow-shdowColor shadow-md text-whiteColor font-semibold border-white' 
         name="email"
         onChange={(e)=>setEmail(e.target.value)}
