@@ -1,10 +1,12 @@
-import React, { createContext, useState } from 'react'
+/** @format */
+
+import React, { createContext, useState } from "react";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 const auth = getAuth();
 signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
-    // Signed in 
+    // Signed in
     const user = userCredential.user;
     // ...
   })
@@ -14,10 +16,12 @@ signInWithEmailAndPassword(auth, email, password)
   });
 export const UsersContext = createContext();
 
-const Context= ({children}) => {
+const Context = ({ children }) => {
   const [users, setUsers] = useState([]);
   return (
-    <UsersContext.Provider value={{users, setUsers}}>{children}</UsersContext.Provider>
-  )
-}
+    <UsersContext.Provider value={{ users, setUsers }}>
+      {children}
+    </UsersContext.Provider>
+  );
+};
 export default Context;
