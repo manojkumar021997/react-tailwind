@@ -38,6 +38,7 @@ const SignUpWithEmail = () => {
         name="password" type="password" placeholder="Enter Password"/>
         <input className='bg-transparent shadow-shdowColor shadow-md text-whiteColor border-white' type="text" placeholder="Confirm password" />
         <button className="border-2 rounded-md font-semibold border-shdowColor opacity-100 hover:bg-white hover:text-blackColor">Submit</button>
+        <p className='bg-transparent flex items-center'>Already Have an account? <strong className='text-yellowColor' onClick={()=>navigate('/signin')}>Signin</strong></p>
       </form>
     </div>
   );

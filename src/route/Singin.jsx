@@ -2,8 +2,10 @@
 // import SignUpWithGoogle from "../components/SignUp/signUpWithGoogle";
 import { useState } from 'react';
 import { UserAuth } from '../Context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
 const SignIn = () => {
+  const Navigate = useNavigate();
   const { login } = UserAuth();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -21,6 +23,7 @@ const SignIn = () => {
 
     try {
       await login(email, password);
+      Navigate("/")
       // alert("login correct")
       console.log('login success');
     } catch (error) {
@@ -42,6 +45,8 @@ const SignIn = () => {
                     <input className="w-72  h-8" type="password" placeholder="Enter Your Password" onChange={handlePasswordChange}/><br/>
                     <input className="w-72  h-8" type="password" placeholder="Enter Your Confirmpassword"/>
                     <button className="mt-6">Submit</button>
+                    <p className='bg-transparent gap-3 '>Dont Have an Account yet?
+                    <strong className='cursor-pointer ' onClick={()=>Navigate('/signup')}> SignUp</strong></p>
                   </form>
                   </div>
                 <div className="bg-yellowColor opacity-70  flex items-center justify-center ">
